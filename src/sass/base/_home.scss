@@ -1,1 +1,42 @@
 @use "./base" as *;
+
+.heading {
+  grid-column: 1 / span 4;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin-top: 5vw;
+
+  & h1 {
+    position: relative;
+    &::before {
+      content: "";
+      width: 6px;
+      background-color: var(--color-white);
+      height: 200%;
+      position: absolute;
+      left: -4rem;
+      top: -6rem;
+      border-radius: 5px;
+      animation: expandVertical 2s ease-in-out;
+    }
+    &::after {
+      content: "";
+      width: 150%;
+      background-color: var(--color-white);
+      height: 6px;
+      position: absolute;
+      left: -14rem;
+      bottom: -4rem;
+      border-radius: 5px;
+      animation: expandHorizontal 2s ease-in-out;
+    }
+  }
+  &__image {
+    grid-column: 5 / -1;
+    z-index: 3;
+    & img {
+      width: 100%;
+    }
+  }
+}

@@ -1,1 +1,8 @@
 @use "./base" as *;
+
+h1 {
+  font-family: "Jockey One", sans-serif;
+  color: var(--color-white);
+  line-height: 1.1;
+  font-size: clamp(16px, 2.5vw, 60px);
+}

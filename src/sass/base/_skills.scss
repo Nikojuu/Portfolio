@@ -1,1 +1,8 @@
 @use "./base" as *;
+
+.skill-section {
+  grid-column: 1 /-1;
+  height: 80vh;
+  background-color: var(--background-darkgrey);
+  margin-top: -5vw;
+}
