@@ -1,1 +1,0 @@
-// jäi kesken typewriter

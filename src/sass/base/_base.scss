@@ -4,6 +4,10 @@
   --background-black: #100f0d;
   --background-darkgrey: #2d2d2d;
   --color-white: #ffffff;
+  --color-pink: #ff5c6c;
+  --color-purple: #9c00ff;
+  --color-blue: #00d2ff;
+  --color-green: #00ff99;
 
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
@@ -22,19 +26,19 @@
   padding: 0;
 }
 *,
-*::before *::after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1 Rem = 10px 10px/16px = 62,5
-  font-family: "Montserrat", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .container-grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  background-color: var(--background-black);
 }
 
 /////////////////Animation////////////////////
@@ -44,7 +48,7 @@ html {
     height: 0;
   }
   to {
-    height: 200%;
+    height: 24vw;
   }
 }
 @keyframes expandHorizontal {
@@ -52,7 +56,7 @@ html {
     width: 0;
   }
   to {
-    width: 150%;
+    width: 38vw;
   }
 }
 @keyframes blink {

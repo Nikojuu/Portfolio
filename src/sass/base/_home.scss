@@ -1,5 +1,10 @@
 @use "./base" as *;
 
+.heading-section {
+  background-color: var(--background-black);
+
+  min-height: 100vh;
+}
 .heading {
   grid-column: 1 / span 4;
   display: flex;
@@ -8,29 +13,34 @@
   margin-top: 5vw;
 
   & h1 {
+    width: 27vw;
+
     position: relative;
     &::before {
       content: "";
-      width: 6px;
+      width: 4px;
       background-color: var(--color-white);
-      height: 200%;
+      height: 24vw;
       position: absolute;
-      left: -4rem;
-      top: -6rem;
+      left: -2vw;
+      top: -2vw;
       border-radius: 5px;
       animation: expandVertical 2s ease-in-out;
     }
     &::after {
       content: "";
-      width: 150%;
+      width: 38vw;
       background-color: var(--color-white);
-      height: 6px;
+      height: 4px;
       position: absolute;
-      left: -14rem;
-      bottom: -4rem;
+      left: -7vw;
+      bottom: -1vw;
       border-radius: 5px;
       animation: expandHorizontal 2s ease-in-out;
     }
+  }
+  &__typewriter {
+    color: var(--color-primary);
   }
   &__image {
     grid-column: 5 / -1;
@@ -40,9 +50,6 @@
     }
   }
   &__cursor {
-    font-family: "Montserrat", sans-serif;
-    font-size: 50px;
-    font-weight: 600;
     color: var(--color-primary);
     animation: blink 1s linear infinite;
   }
