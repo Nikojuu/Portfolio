@@ -1,3 +1,5 @@
+import { addContrast } from "./observers";
+
 tsParticles.load("particles", {
   fps_limit: 60,
   fullScreen: {

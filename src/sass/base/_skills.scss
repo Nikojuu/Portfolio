@@ -11,13 +11,15 @@
 
 .cards-container {
   grid-column: 3 / span 4;
-  height: 55rem;
+  pointer-events: none;
   margin-top: 10rem;
   z-index: 1;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  transition: left 0.5s ease-in-out;
 }
+
 .card {
   background: #00000040;
   width: 45%;
@@ -27,7 +29,39 @@
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  margin-bottom: 5rem;
+  margin-bottom: 30vh;
+  &__skills {
+    padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4.5rem;
+    transition: opacity 2s;
+
+    &__skill {
+      width: 10rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      filter: grayscale(100%);
+
+      & img {
+        width: 100%;
+      }
+
+      &--active {
+        filter: grayscale(0);
+        transition: filter 1s;
+        animation: scale 1s ease-in forwards;
+      }
+    }
+
+    &--hidden {
+      opacity: 0;
+    }
+  }
 }
 
 #particles {

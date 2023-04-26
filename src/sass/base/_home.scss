@@ -18,7 +18,7 @@
     position: relative;
     &::before {
       content: "";
-      width: 4px;
+      width: 2px;
       background-color: var(--color-white);
       height: 24vw;
       position: absolute;
@@ -31,7 +31,7 @@
       content: "";
       width: 38vw;
       background-color: var(--color-white);
-      height: 4px;
+      height: 2px;
       position: absolute;
       left: -7vw;
       bottom: -1vw;
@@ -52,5 +52,20 @@
   &__cursor {
     color: var(--color-primary);
     animation: blink 1s linear infinite;
+  }
+}
+
+.social-icons {
+  color: var(--color-grey-dark-2);
+  position: absolute;
+  left: 3rem;
+  bottom: -16rem;
+  font-size: 50px;
+
+  & span {
+    transition: all 0.3s;
+    &:hover {
+      color: white;
+    }
   }
 }

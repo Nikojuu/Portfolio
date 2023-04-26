@@ -1,1 +1,61 @@
 @use "./base" as *;
+
+.projects {
+  &__section {
+    background-color: var(--background-black);
+    position: relative;
+  }
+  &__image {
+    grid-column: 3 / 6;
+    object-fit: cover;
+    grid-row: 2;
+    position: relative;
+
+    & img {
+      width: 100%;
+      filter: brightness(50%);
+    }
+    &-2 {
+      grid-row: 3;
+      grid-column: 4 / span 3;
+    }
+  }
+  &__description {
+    z-index: 1;
+    grid-column: 5 / span 3;
+    grid-row: 2;
+    justify-self: end;
+
+    & h3 {
+      text-align: end;
+    }
+    &-1 {
+      transform: translateX(150%);
+    }
+
+    &-2 {
+      grid-column: 2 / span 3;
+      grid-row: 3;
+      transform: translateX(-150%);
+
+      .projects__links {
+        justify-content: start;
+      }
+      h3 {
+        text-align: left;
+      }
+    }
+
+    & p {
+      margin-top: 3rem;
+      padding: 2rem 2rem 2rem 4rem;
+      background-color: var(--color-white);
+    }
+  }
+  &__links {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: end;
+    gap: 10rem;
+  }
+}

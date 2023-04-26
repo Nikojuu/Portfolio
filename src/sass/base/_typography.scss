@@ -26,6 +26,7 @@ h2 {
     position: absolute;
     left: 0;
     bottom: -4px;
+    box-shadow: 0px 0px 10px 1px var(--color-primary);
   }
 }
 h3 {
@@ -43,5 +44,17 @@ h3 {
     position: absolute;
     left: 0;
     bottom: -4px;
+    box-shadow: 0px 0px 10px 1px var(--color-primary);
   }
+}
+
+h4 {
+  color: var(--color-white);
+  text-shadow: 0px 0px 8px var(--color-primary);
+}
+
+p {
+  color: var(--color-black);
+  font-size: 22px;
+  line-height: 1.4;
 }
