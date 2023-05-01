@@ -2,12 +2,12 @@ const cardsContainer = document.querySelector(".cards-container");
 const cards = document.querySelectorAll(".card__skills");
 const skills = document.querySelectorAll(".card__skills__skill");
 const projectsImg = document.querySelectorAll(".projects__image");
-const verticalLineLeft = document.querySelector(".vertical__line-left");
+const verticalLineLeft = document.querySelectorAll(".vertical__line-left");
 const verticalLineRight = document.querySelector(".vertical__line-right");
-const horizontalLineLeft = document.querySelector(".horizontal__line-left");
+const horizontalLineLeft = document.querySelectorAll(".horizontal__line-left");
 const horizontalLineRight = document.querySelector(".horizontal__line-right");
 const projectsDescription = document.querySelectorAll(".projects__description");
-const skillsArticle = document.querySelector(".article__left");
+const leftArticle = document.querySelectorAll(".article__left");
 const articleText = document.querySelectorAll(".article p");
 const sertificates = document.querySelector(".sertificate");
 const sertificateCards = document.querySelectorAll(".sertificate__card");
@@ -84,13 +84,15 @@ projectsImg.forEach((img) => {
           entry.isIntersecting &&
           entry.target.classList.contains("projects__image-1")
         ) {
-          verticalLineLeft.classList.add("vertical__line");
+          // vertical and horizontal line [0] as in first instance projects section in this case
+          verticalLineLeft[0].classList.add("vertical__line");
           // Slide in animation for project description//
           projectsDescription[0].style.animation =
             "slideIn-right 1.5s cubic-bezier(0.6, -0.05, 0.1, 0.99) both";
 
           await waitTime(1000);
-          horizontalLineLeft.classList.add("horizontal__line");
+
+          horizontalLineLeft[0].classList.add("horizontal__line");
           imgObserver.unobserve(entry.target);
         }
       });
@@ -104,7 +106,7 @@ projectsImg.forEach((img) => {
   imgObserver.observe(img);
 });
 
-///// Observer sertificates///
+///// Observer sertificates & About///
 const observerSertificates = new IntersectionObserver(
   async (entries) => {
     const [entry] = entries;
@@ -115,8 +117,15 @@ const observerSertificates = new IntersectionObserver(
       entry.isIntersecting &&
       entry.target.classList.contains("article")
     ) {
-      skillsTextAnimation();
-      observerSertificates.unobserve(skillsArticle);
+      if (entry.target === leftArticle[0]) {
+        skillsTextAnimation(2);
+        observerSertificates.unobserve(leftArticle[0]);
+      } else if (entry.target === leftArticle[1]) {
+        skillsTextAnimation(3);
+        verticalLineLeft[1].classList.add("vertical__line");
+        horizontalLineLeft[1].classList.add("horizontal__line");
+        observerSertificates.unobserve(leftArticle[1]);
+      }
     } else if (
       entry.isIntersecting &&
       entry.target.classList.contains("sertificate")
@@ -131,15 +140,23 @@ const observerSertificates = new IntersectionObserver(
   }
 );
 
-observerSertificates.observe(skillsArticle);
+observerSertificates.observe(leftArticle[0]);
 observerSertificates.observe(sertificates);
-
+observerSertificates.observe(leftArticle[1]);
 // Sertificate functions//
 
-const skillsTextAnimation = async function () {
-  for (const p of articleText) {
-    p.classList.add("active");
-    await waitTime(500);
+const skillsTextAnimation = async function (paragraphNumber) {
+  for (let i = 0; i < articleText.length; i++) {
+    if (i <= paragraphNumber && i < 2 && paragraphNumber < 3) {
+      // animate the first two paragraphs
+      articleText[i].classList.add("active");
+
+      await waitTime(500);
+    } else if (i === paragraphNumber - 1 && i === 2) {
+      // animate only the third paragraph
+      articleText[i].classList.add("active");
+      console.log(i);
+    }
   }
 };
 

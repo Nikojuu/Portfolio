@@ -21,7 +21,7 @@
 16D:\Portfolio\src133264152922155900 1
 66D:\Portfolio\node_modules\@parcel\reporter-cli\src\bundleReport.js133262191945887614 0
 34D:\Portfolio\src\fonts\icomoon.eot133273480980000000 0
-17D:\Portfolio\dist133273588854083042 1
+17D:\Portfolio\dist133274498380933744 1
 54D:\Portfolio\node_modules\svgo\plugins\inlineStyles.js133262191950357985 0
 69D:\Portfolio\node_modules\caniuse-lite\data\features\server-timing.js133262191959237980 0
 46D:\Portfolio\node_modules\@babel\highlight\lib133262191946067625 1
@@ -34,7 +34,7 @@
 36D:\Portfolio\src\sass\base\_nav.scss133268444373116373 0
 46D:\Portfolio\node_modules\postcss-value-parser133262191947822803 1
 97D:\Portfolio\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\config\lexer.js133262191953417970 0
-23D:\Portfolio\index.html133273583989482991 0
+23D:\Portfolio\index.html133274488196221251 0
 106D:\Portfolio\node_modules\@parcel\optimizer-svgo\node_modules\css-select\lib\pseudo-selectors\aliases.d.ts133262191950507980 0
 66D:\Portfolio\node_modules\csso\node_modules\css-tree\cjs\generator133262191954317964 1
 50D:\Portfolio\node_modules\terser\dist\package.json133262191952787954 0
@@ -90,7 +90,7 @@
 74D:\Portfolio\node_modules\@parcel\packager-js\src\ScopeHoistingPackager.js133262191949517967 0
 85D:\Portfolio\node_modules\dom-serializer\node_modules\entities\lib\maps\entities.json133262191947862790 0
 73D:\Portfolio\node_modules\caniuse-lite\data\features\namevalue-storage.js133262191958377970 0
-38D:\Portfolio\src\sass\base\_about.scss133273586007443027 0
+38D:\Portfolio\src\sass\base\_about.scss133274498380103739 0
 45D:\Portfolio\node_modules\terser\lib\scope.js133262191952447964 0
 62D:\Portfolio\node_modules\css-tree\cjs\syntax\node\Feature.cjs133262191951687967 0
 68D:\Portfolio\node_modules\csso\node_modules\css-tree\cjs\syntax\node133262191954677968 1
@@ -113,7 +113,7 @@
 36D:\Portfolio\node_modules\fill-range133262191946357621 1
 51D:\Portfolio\node_modules\csso\cjs\replace\property133262191950057980 1
 37D:\Portfolio\src\sass\base\_base.scss133273566167688380 0
-32D:\Portfolio\src\js\observers.js133273578338312997 0
+32D:\Portfolio\src\js\observers.js133274470219802781 0
 88D:\Portfolio\node_modules\@parcel\core\test\fixtures\invalid-source-missing\package.json133262191955437972 0
 53D:\Portfolio\node_modules\@swc\helpers\lib\_update.js133262191953647980 0
 35D:\Portfolio\node_modules\@lezer\lr133262191947437634 1
@@ -257,7 +257,7 @@
 84D:\Portfolio\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\lib\parser.js133262191951217969 0
 35D:\Portfolio\src\fonts\icomoon.woff133273480980000000 0
 78D:\Portfolio\node_modules\lmdb\node_modules\node-addon-api\tools\check-napi.js133262191948888006 0
-39D:\Portfolio\dist\index.739bf03c.js.map133273584956423190 0
+39D:\Portfolio\dist\index.739bf03c.js.map133274486528362714 0
 39D:\Portfolio\node_modules\htmlnano\docs133262191953287971 1
 52D:\Portfolio\node_modules\@parcel\graph\src\index.js133262191949117968 0
 32D:\Portfolio\node_modules\@babel133262191935437445 1
@@ -352,7 +352,7 @@
 59D:\Portfolio\node_modules\caniuse-lite\dist\lib\statuses.js133262191959427961 0
 63D:\Portfolio\node_modules\svgo\plugins\removeEmptyContainers.js133262191951827982 0
 64D:\Portfolio\node_modules\caniuse-lite\data\features\download.js133262191956437972 0
-38D:\Portfolio\dist\icomoon.f4ee57f9.svg133273584956473179 0
+38D:\Portfolio\dist\icomoon.f4ee57f9.svg133274486528922711 0
 49D:\Portfolio\node_modules\picocolors\package.json133262191946427619 0
 31D:\Portfolio\node_modules\chalk133262191947587631 1
 50D:\Portfolio\node_modules\node-addon-api\README.md133262191949927963 0
@@ -693,7 +693,7 @@
 43D:\Portfolio\node_modules\parcel\lib\bin.js133262191945887614 0
 73D:\Portfolio\node_modules\css-tree\lib\syntax\node\PseudoClassSelector.js133262191955917969 0
 76D:\Portfolio\node_modules\@parcel\source-map\parcel_sourcemap_node\artifacts133262191953537966 1
-36D:\Portfolio\dist\react.8460bc8e.png133273584956213188 0
+36D:\Portfolio\dist\react.8460bc8e.png133274486528272721 0
 31D:\Portfolio\node_modules\tslib133262191948642804 1
 57D:\Portfolio\node_modules\caniuse-lite\data\regions\AR.js133262191950637986 0
 46D:\Portfolio\node_modules\lightningcss\LICENSE133262191945367614 0
@@ -1313,7 +1313,7 @@
 76D:\Portfolio\node_modules\csso\node_modules\css-tree\cjs\lexer\structure.cjs133262191954237958 0
 57D:\Portfolio\node_modules\svgo\plugins\applyTransforms.js133262191948282801 0
 76D:\Portfolio\node_modules\caniuse-lite\data\features\css-deviceadaptation.js133262191954957960 0
-40D:\Portfolio\dist\index.f7626f62.css.map133273588854073015 0
+40D:\Portfolio\dist\index.f7626f62.css.map133274498380923740 0
 47D:\Portfolio\node_modules\csso\dist\version.cjs133262191951817971 0
 51D:\Portfolio\node_modules\@parcel\markdown-ansi\src133262191946197623 1
 77D:\Portfolio\node_modules\caniuse-lite\data\features\css-media-interaction.js133262191955447959 0
@@ -2415,7 +2415,7 @@
 50D:\Portfolio\node_modules\is-arrayish\package.json133262191945287635 0
 87D:\Portfolio\node_modules\csso\node_modules\css-tree\cjs\syntax\scope\atrulePrelude.cjs133262191948322796 0
 69D:\Portfolio\node_modules\@parcel\transformer-svg\src\dependencies.js133262191946307619 0
-37D:\Portfolio\dist\nodejs.d18f66b6.png133273584956483169 0
+37D:\Portfolio\dist\nodejs.d18f66b6.png133274486528752698 0
 36D:\Portfolio\node_modules\braces\lib133262191948452813 1
 52D:\Portfolio\node_modules\@parcel\fs\src\MemoryFS.js133262191947922792 0
 47D:\Portfolio\node_modules\is-arrayish\README.md133262191946067625 0
@@ -2636,7 +2636,7 @@
 59D:\Portfolio\node_modules\caniuse-lite\data\features\wav.js133262191960597966 0
 58D:\Portfolio\node_modules\entities\lib\decode_codepoint.js133262191945787639 0
 62D:\Portfolio\node_modules\caniuse-lite\data\features\webvtt.js133262191960747955 0
-35D:\Portfolio\dist\sass.76734266.png133273584956443162 0
+35D:\Portfolio\dist\sass.76734266.png133274486527982700 0
 59D:\Portfolio\node_modules\entities\lib\encode-trie.d.ts.map133262191949537967 0
 72D:\Portfolio\node_modules\caniuse-lite\data\features\user-select-none.js133262191960437954 0
 49D:\Portfolio\node_modules\csso\lib\replace\atrule133262191953587975 1
@@ -4442,7 +4442,7 @@
 47D:\Portfolio\node_modules\acorn\dist\acorn.d.ts133262191949147967 0
 45D:\Portfolio\node_modules\acorn\dist\acorn.js133262191947417617 0
 46D:\Portfolio\node_modules\acorn\dist\acorn.mjs133262191949037967 0
-35D:\Portfolio\dist\index.739bf03c.js133273584956243176 0
+35D:\Portfolio\dist\index.739bf03c.js133274486528342721 0
 55D:\Portfolio\node_modules\abortcontroller-polyfill\dist133262191948582801 1
 58D:\Portfolio\node_modules\abortcontroller-polyfill\LICENSE133262191945377609 0
 60D:\Portfolio\node_modules\abortcontroller-polyfill\README.md133262191949047962 0
@@ -4669,7 +4669,7 @@
 65D:\Portfolio\node_modules\@parcel\utils\src\relativeBundlePath.js133262191952877957 0
 56D:\Portfolio\node_modules\@parcel\utils\src\sourcemap.js133262191953167973 0
 55D:\Portfolio\node_modules\@parcel\utils\src\throttle.js133262191953297967 0
-34D:\Portfolio\dist\css.a5aad6b4.png133273584956213188 0
+34D:\Portfolio\dist\css.a5aad6b4.png133274486528272721 0
 56D:\Portfolio\node_modules\@parcel\utils\lib\index.js.map133262191954107954 0
 51D:\Portfolio\node_modules\@parcel\types\build-ts.js133262191945717618 0
 48D:\Portfolio\node_modules\@parcel\types\index.js133262191946397627 0
@@ -4996,7 +4996,7 @@
 87D:\Portfolio\node_modules\@parcel\optimizer-svgo\node_modules\svgo\dist\svgo.browser.js133262191953497968 0
 74D:\Portfolio\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\css133262191950577985 1
 75D:\Portfolio\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\l10n133262191947982798 1
-36D:\Portfolio\dist\index.f7626f62.css133273588854053039 0
+36D:\Portfolio\dist\index.f7626f62.css133274498380913744 0
 83D:\Portfolio\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\package.json133262191949067971 0
 102D:\Portfolio\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\lexer\prepare-tokens.js133262191954107954 0
 84D:\Portfolio\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\l10n\css.json133262191948422792 0
@@ -5277,7 +5277,7 @@
 95D:\Portfolio\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\restructure\index.js133262191951237963 0
 94D:\Portfolio\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\restructure\prepare133262191951767977 1
 95D:\Portfolio\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\restructure\utils.js133262191952147958 0
-42D:\Portfolio\dist\Edited-test.bd9d699d.png133273584956573178 0
+42D:\Portfolio\dist\Edited-test.bd9d699d.png133274486528802687 0
 122D:\Portfolio\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\restructure\prepare\createDeclarationIndexer.js133262191949717969 0
 103D:\Portfolio\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\restructure\prepare\index.js133262191951327970 0
 109D:\Portfolio\node_modules\@parcel\optimizer-htmlnano\node_modules\csso\lib\restructure\prepare\specificity.js133262191951787956 0
@@ -5790,7 +5790,7 @@
 120D:\Portfolio\node_modules\@jridgewell\trace-mapping\node_modules\@jridgewell\sourcemap-codec\dist\sourcemap-codec.umd.js133262191945897619 0
 73D:\Portfolio\node_modules\@babel\helper-validator-identifier\lib\index.js133262191947057625 0
 74D:\Portfolio\node_modules\@jridgewell\trace-mapping\dist\trace-mapping.mjs133262191948122805 0
-48D:\Portfolio\dist\nokkisProjectShow.8e75cc93.png133273584956563168 0
+48D:\Portfolio\dist\nokkisProjectShow.8e75cc93.png133274486528042715 0
 77D:\Portfolio\node_modules\@babel\helper-validator-identifier\lib\index.js.map133262191947337636 0
 78D:\Portfolio\node_modules\@jridgewell\trace-mapping\dist\trace-mapping.mjs.map133262191946967618 0
 77D:\Portfolio\node_modules\@jridgewell\trace-mapping\dist\trace-mapping.umd.js133262191945907607 0
@@ -5887,16 +5887,16 @@
 41D:\Portfolio\node_modules\.bin\terser.ps1133262191961747964 0
 57D:\Portfolio\node_modules\.bin\update-browserslist-db.cmd133262191961787966 0
 51D:\Portfolio\dist\Edited-test.bd9d699d.png.10936.14133273528432223010 0
-36D:\Portfolio\dist\figma.fc2af115.png133273584956443162 0
-35D:\Portfolio\dist\gimp.a6ad47b0.png133273584956213188 0
-40D:\Portfolio\dist\html-logo.64662cef.png133273584956443162 0
-38D:\Portfolio\dist\icomoon.569a8f25.ttf133273584956443162 0
-38D:\Portfolio\dist\icomoon.57c8725f.eot133273584956483169 0
+36D:\Portfolio\dist\figma.fc2af115.png133274486527982700 0
+35D:\Portfolio\dist\gimp.a6ad47b0.png133274486528272721 0
+40D:\Portfolio\dist\html-logo.64662cef.png133274486527982700 0
+38D:\Portfolio\dist\icomoon.569a8f25.ttf133274486527552711 0
+38D:\Portfolio\dist\icomoon.57c8725f.eot133274486527572694 0
 38D:\Portfolio\dist\icomoon.c181a2a7.svg133273483742193580 0
 38D:\Portfolio\dist\icomoon.c55eddbc.ttf133273483742453565 0
-39D:\Portfolio\dist\icomoon.e713c251.woff133273584956213188 0
-39D:\Portfolio\dist\incscape.2a30559f.png133273584956483169 0
+39D:\Portfolio\dist\icomoon.e713c251.woff133274486528102734 0
+39D:\Portfolio\dist\incscape.2a30559f.png133274486528762707 0
 48D:\Portfolio\dist\index.f7626f62.css.map.29256.u133264933408108400 0
-28D:\Portfolio\dist\index.html133273584956243176 0
-33D:\Portfolio\dist\js.e7f07ea0.png133273584956483169 0
-36D:\Portfolio\dist\Udemy.d2e77fc8.png133273584956443162 0
+28D:\Portfolio\dist\index.html133274488196941224 0
+33D:\Portfolio\dist\js.e7f07ea0.png133274486528762707 0
+36D:\Portfolio\dist\Udemy.d2e77fc8.png133274486527992690 0
