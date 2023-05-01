@@ -106,3 +106,8 @@
     right: -10rem;
   }
 }
+
+.article p.active,
+.sertificate__card.active {
+  transform: translateX(0%);
+}

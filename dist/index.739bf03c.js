@@ -737,6 +737,10 @@ const verticalLineRight = document.querySelector(".vertical__line-right");
 const horizontalLineLeft = document.querySelector(".horizontal__line-left");
 const horizontalLineRight = document.querySelector(".horizontal__line-right");
 const projectsDescription = document.querySelectorAll(".projects__description");
+const skillsArticle = document.querySelector(".article__left");
+const articleText = document.querySelectorAll(".article p");
+const sertificates = document.querySelector(".sertificate");
+const sertificateCards = document.querySelectorAll(".sertificate__card");
 // helper waitTime function just pass Millseconds you want to wait!
 const waitTime = function(ms) {
     return new Promise((resolve)=>{
@@ -802,6 +806,36 @@ projectsImg.forEach((img)=>{
     });
     imgObserver.observe(img);
 });
+///// Observer sertificates///
+const observerSertificates = new IntersectionObserver(async (entries)=>{
+    const [entry] = entries;
+    if (!entry.isIntersecting) return;
+    else if (entry.isIntersecting && entry.target.classList.contains("article")) {
+        skillsTextAnimation();
+        observerSertificates.unobserve(skillsArticle);
+    } else if (entry.isIntersecting && entry.target.classList.contains("sertificate")) {
+        serticicateCardAnimation();
+        observerSertificates.unobserve(sertificates);
+    }
+}, {
+    root: null,
+    threshold: 0.6
+});
+observerSertificates.observe(skillsArticle);
+observerSertificates.observe(sertificates);
+// Sertificate functions//
+const skillsTextAnimation = async function() {
+    for (const p of articleText){
+        p.classList.add("active");
+        await waitTime(500);
+    }
+};
+const serticicateCardAnimation = async function() {
+    for (const card of sertificateCards){
+        card.classList.add("active");
+        await waitTime(500);
+    }
+};
 
 },{}]},["gHDMI","ebWYT"], "ebWYT", "parcelRequire2041")
 
