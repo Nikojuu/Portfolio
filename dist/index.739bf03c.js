@@ -747,6 +747,10 @@ const waitTime = function(ms) {
         setTimeout(resolve, ms);
     });
 };
+// scroll on top of page at refresh site//
+window.onload = function() {
+    window.scrollTo(0, 0);
+};
 ///// Skill section observers observs cards and pass functions into it///
 const observerSkills = new IntersectionObserver(async (entries)=>{
     const [entry] = entries;
@@ -827,7 +831,7 @@ const observerSertificates = new IntersectionObserver(async (entries)=>{
     }
 }, {
     root: null,
-    threshold: 0.6
+    threshold: 0.4
 });
 observerSertificates.observe(leftArticle[0]);
 observerSertificates.observe(sertificates);
@@ -839,17 +843,17 @@ const skillsTextAnimation = async function(paragraphNumber) {
             // animate the first two paragraphs
             articleText[i].classList.add("active");
             await waitTime(500);
-        } else if (i === paragraphNumber - 1 && i === 2) {
+        } else if (i >= paragraphNumber - 1 && i >= 2) {
             // animate only the third paragraph
             articleText[i].classList.add("active");
-            console.log(i);
+            await waitTime(300);
         }
     }
 };
 const serticicateCardAnimation = async function() {
     for (const card of sertificateCards){
         card.classList.add("active");
-        await waitTime(500);
+        await waitTime(300);
     }
 };
 

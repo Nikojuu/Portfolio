@@ -3,6 +3,7 @@
 .about__section {
   background-color: var(--background-darkgrey);
   position: relative;
+  row-gap: 8rem;
 
   & article p {
     padding-top: 0;
@@ -14,9 +15,10 @@
 }
 
 .about__picture {
-  grid-column: 5 / 7;
+  grid-column: 5 / 8;
   grid-row: 1 / 4;
   margin-top: 7rem;
+
   & img {
     width: 100%;
   }

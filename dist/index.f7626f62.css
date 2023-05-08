@@ -173,6 +173,7 @@ html {
 
 .about__section {
   background-color: var(--background-darkgrey);
+  row-gap: 8rem;
   position: relative;
 }
 
@@ -186,11 +187,40 @@ html {
 }
 
 .about__picture {
-  grid-area: 1 / 5 / 4 / 7;
+  grid-area: 1 / 5 / 4 / 8;
   margin-top: 7rem;
 }
 
 .about__picture img {
+  width: 100%;
+}
+
+.contact__section {
+  background-color: var(--background-black);
+}
+
+.contact__form {
+  border: 1px solid var(--color-primary);
+  background-color: var(--background-darkgrey);
+  border-radius: 10px;
+  grid-column: 3 / 7;
+  justify-content: space-between;
+  padding: 5rem;
+  display: flex;
+  position: relative;
+}
+
+.contact__form h3, .contact__form p {
+  margin: 1rem 0;
+}
+
+.contact__form button.btn {
+  z-index: 0;
+  background-color: #0000;
+  font-family: Jockey One, sans-serif;
+}
+
+.contact__img img {
   width: 100%;
 }
 
@@ -392,6 +422,7 @@ html {
 
 .projects__description p {
   background-color: var(--color-white);
+  color: var(--color-white-black);
   margin-top: 3rem;
   padding: 2rem 2rem 2rem 4rem;
 }
@@ -529,7 +560,7 @@ h4 {
 }
 
 p {
-  color: var(--color-black);
+  color: var(--color-white);
   font-family: Josefin Sans, sans-serif;
   font-size: 22px;
   line-height: 1.4;
@@ -632,6 +663,77 @@ p {
   transform: translateX(0%);
 }
 
+.form {
+  width: 45%;
+  min-width: 45%;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.form__input {
+  background-color: var(--color-grey-light-1);
+  width: 100%;
+  color: var(--color-black);
+  transition: all .3;
+  border: none;
+  border-bottom: 3px solid #0000;
+  border-radius: 2px;
+  padding: 1.5rem 2rem;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 1.5rem;
+  display: block;
+}
+
+.form__input:focus {
+  border-bottom: 3px solid var(--color-primary);
+  outline: none;
+  box-shadow: 0 1rem 2rem #0000001a;
+}
+
+.form__input:focus:invalid {
+  border-bottom: 3px solid red;
+}
+
+.form__input::placeholder {
+  color: var(--color-black);
+}
+
+.form__textarea {
+  color: var(--color-black);
+  width: 100%;
+  max-width: 100%;
+  font-family: Josefin Sans, sans-serif;
+  display: block;
+}
+
+.form__textarea:focus {
+  border-bottom: 3px solid var(--color-primary);
+  outline: none;
+  box-shadow: 0 1rem 2rem #0000001a;
+}
+
+.form__textarea::placeholder {
+  color: var(--color-black);
+}
+
+.form__label {
+  color: var(--color-white);
+  margin-top: .7rem;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all .3s;
+  display: block;
+}
+
+.form__input:placeholder-shown + .form__label, .form__textarea:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
 .sertificate-section {
   background-color: var(--background-darkgrey);
   row-gap: 0;
@@ -644,7 +746,6 @@ p {
 }
 
 .article p {
-  color: var(--color-white);
   padding-top: 10rem;
   transition: all 1s ease-in-out;
   transform: translateX(-300%);

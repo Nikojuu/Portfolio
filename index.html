@@ -235,20 +235,81 @@
       <div class="horizontal__line-left"></div>
       <article class="article article__left">
         <p>
-          Osaan kehittää moderneja interaktiivisia sekä responsiivisia
-          nettisivuja. Parhaiten tutuiksi ovat tullee teknologiat kuten HTML,
-          CSS(sass), javaScript ja React kirjasto.Hieman kokemusta myös backend
-          kehityksestä NodeJs kanssa työskentelystä, mutta pääpainotteeni
-          toistaiseksi on Frontend kehitys.Osaan kehittää moderneja
-          interaktiivisia sekä responsiivisia nettisivuja. Parhaiten tutuiksi
-          ovat tullee teknologiat kuten HTML, CSS(sass), javaScript ja React
-          kirjasto.Hieman kokemusta myös backend kehityksestä NodeJs kanssa
-          työskentelystä, mutta pääpainotteeni toistaiseksi on Frontend kehitys.
+          Hei! Olen Niko, kolmekymppinen itseoppinut freelance web-kehittäjä.
+          Haaveet alanvaihdosta sytyttivät kesällä 2022 kipinän opiskeluun, jota
+          aloin suorittaa erilaisilla verkkokurssein ja omilla projekteilla.
+          Tähän mennessä olen kartuttanut sujuvat HTML, CSS ja JavaScript
+          taidot.
+        </p>
+
+        <p>
+          Pyrin kehittämään osaamistani jatkuvasti, niin uutta opettelemalla
+          kuin vanhaa osaamista harjaannuttamalla. Juuri nyt työn alla ovat PHP,
+          sekä Reactissa ja Wordpressissa kehittyminen.
+        </p>
+        <p>
+          Tavoitteenani on tehdä moderneja, näyttäviä ja responsiivisia
+          nettisivuja vastaamaan ihmisten tarpeita. Olen valmis ja innokas
+          uusiin haasteisiin. Olen tietoinen omasta osaamisestani, enkä ota
+          vastaan projektia, jos en voi toimittaa haluttua lopputulosta.
         </p>
         <a href="#" class="btn" target="_blank">Ota yhteyttä!</a>
       </article>
+
       <div class="about__picture">
         <img src="/src/img/Edited-test.png" alt="" />
+      </div>
+    </section>
+    <section class="contact__section container-grid">
+      <h2 class="mt-medium">Ota yhteyttä</h2>
+      <div class="contact__form">
+        <form
+          class="form"
+          action="https://formsubmit.co/your@email.com"
+          method="POST"
+        >
+          <h3>Jätä minulle viesti</h3>
+          <p>vastaan mahdollisimman pian!</p>
+          <div class="form__group">
+            <input
+              type="text"
+              class="form__input"
+              name="FullName"
+              id="name"
+              placeholder="Nimi"
+              required
+            />
+            <label for="name" class="form__label">Nimi</label>
+          </div>
+
+          <div class="form__group">
+            <input
+              type="email"
+              class="form__input"
+              name="Email"
+              placeholder="Sähköposti"
+              id="email"
+              required
+            />
+            <label for="email" class="form__label">Sähköposti</label>
+          </div>
+          <div class="form__group">
+            <textarea
+              class="form__textarea"
+              name="Viesti"
+              id="message"
+              rows="3"
+              placeholder="Jätä viesti"
+              required
+            ></textarea>
+            <label for="message" class="form__label">Jätä viesti</label>
+          </div>
+
+          <button type="submit" class="btn">Lähetä</button>
+        </form>
+        <div class="contact__img">
+          <img src="/src/img/contact_edited.svg" alt="contact-me" />
+        </div>
       </div>
     </section>
   </body>

@@ -1,1 +1,36 @@
 @use "./base" as *;
+.contact {
+  &__section {
+    background-color: var(--background-black);
+  }
+
+  &__form {
+    grid-column: 3 / 7;
+    padding: 5rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: var(--background-darkgrey);
+
+    & h3 {
+      margin: 1rem 0;
+    }
+    & p {
+      margin: 1rem 0;
+    }
+
+    & button.btn {
+      font-family: Jockey One, sans-serif;
+      background-color: transparent;
+
+      z-index: 0;
+    }
+  }
+  &__img {
+    & img {
+      width: 100%;
+    }
+  }
+}

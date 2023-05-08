@@ -111,3 +111,76 @@
 .sertificate__card.active {
   transform: translateX(0%);
 }
+
+.form {
+  width: 45%;
+  min-width: 45%;
+
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  &__input {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: var(--color-grey-light-1);
+    border: none;
+    font-family: Josefin Sans, sans-serif;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+
+    display: block;
+    color: var(--color-black);
+    transition: all 0.3;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid var(--color-primary);
+    }
+    &:focus:invalid {
+      border-bottom: 3px solid red;
+    }
+    &::placeholder {
+      color: var(--color-black);
+    }
+  }
+  &__textarea {
+    font-family: Josefin Sans, sans-serif;
+    display: block;
+    color: var(--color-black);
+    width: 100%;
+    max-width: 100%;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid var(--color-primary);
+    }
+
+    &::placeholder {
+      color: var(--color-black);
+    }
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--color-white);
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+  }
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+
+  &__textarea:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}
