@@ -1,1 +1,36 @@
 @use "./base" as *;
+
+.footer {
+  background-color: var(--background-darkgrey);
+
+  padding: 5rem;
+  border-top: 1px solid var(--color-primary);
+
+  &__social-icons {
+    color: var(--color-grey-dark-2);
+    padding: 1.5rem;
+    font-size: 50px;
+
+    & span {
+      transition: all 0.3s;
+      margin-left: 1rem;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  &__contact {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+
+    &-info p {
+      padding: 0.5rem;
+    }
+  }
+}
+.copyright {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 16px;
+}

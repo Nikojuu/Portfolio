@@ -51,7 +51,7 @@ const cardOpacity = async function () {
 const skillsFilterEffect = async function () {
   for (const skill of skills) {
     skill.classList.add("card__skills__skill--active");
-    await waitTime(200);
+    await waitTime(100);
   }
 };
 ///////////////adds Class that set opacity to 0 ///////
@@ -150,22 +150,24 @@ observerSertificates.observe(leftArticle[1]);
 // Sertificate functions//
 
 const skillsTextAnimation = async function (paragraphNumber) {
-  for (let i = 0; i < articleText.length; i++) {
+  for (let i = articleText.length - 1; i >= 0; i--) {
     if (i <= paragraphNumber && i < 2 && paragraphNumber < 3) {
       // animate the first two paragraphs
       articleText[i].classList.add("active");
 
       await waitTime(500);
-    } else if (i >= paragraphNumber - 1 && i >= 2) {
+    } else if (i >= paragraphNumber - 1 && i >= 2 && paragraphNumber === 3) {
       // animate only the third paragraph
       articleText[i].classList.add("active");
+      console.log(articleText[i]);
       await waitTime(300);
     }
   }
 };
 
 const serticicateCardAnimation = async function () {
-  for (const card of sertificateCards) {
+  for (let i = sertificateCards.length - 1; i >= 0; i--) {
+    const card = sertificateCards[i];
     card.classList.add("active");
     await waitTime(300);
   }

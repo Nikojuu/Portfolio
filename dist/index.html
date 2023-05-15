@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/index.f7626f62.css">
   </head>
   <body>
-    <section class="heading-section container-grid">
+    <header>
       <nav class="navbar">
         <a href="#" class="navbar__logo"><span> Niko </span></a>
         <div class="navbar__right">
@@ -25,7 +25,8 @@
           </ul>
         </div>
       </nav>
-
+    </header>
+    <section class="heading-section container-grid">
       <div class="heading">
         <h1>
           Moi Olen Niko <br>
@@ -34,20 +35,21 @@
           Teen Nettisivuja!
 
           <div class="social-icons">
-            <span class="icon-github"></span>
+            <a href="https://github.com/Nikojuu"><span class="icon-github"> </span></a>
+
             <span class="icon-linkedin"></span>
           </div>
         </h1>
       </div>
       <div class="heading__image">
-        <img src="/Edited-test.bd9d699d.png" alt="jjjk">
+        <img src="/Edited-test.bd9d699d.png" alt="Profile picture">
       </div>
     </section>
 
     <section class="skill-section container-grid">
       <div id="particles"></div>
       <h2>Tekninen osaaminen</h2>
-      <div class="cards-container">
+      <div class="cards-container mt-medium">
         <div class="card">
           <h3>Develop</h3>
           <div class="card__skills card__skills--hidden">
@@ -206,7 +208,7 @@
       <div class="horizontal__line-left"></div>
       <article class="article article__left">
         <p>
-          Hei! Olen Niko, kolmekymppinen itseoppinut freelance web-kehittäjä.
+          Hei! Olen Niko, 35 vuotias itseoppinut freelance web-kehittäjä.
           Haaveet alanvaihdosta sytyttivät kesällä 2022 kipinän opiskeluun, jota
           aloin suorittaa erilaisilla verkkokurssein ja omilla projekteilla.
           Tähän mennessä olen kartuttanut sujuvat HTML, CSS ja JavaScript
@@ -233,7 +235,7 @@
     </section>
     <section class="contact__section container-grid">
       <h2 class="mt-medium">Ota yhteyttä</h2>
-      <div class="contact__form">
+      <div class="contact__form mt-medium">
         <form class="form" action="https://formsubmit.co/your@email.com" method="POST">
           <h3>Jätä minulle viesti</h3>
           <p>vastaan mahdollisimman pian!</p>
@@ -248,7 +250,7 @@
           </div>
           <div class="form__group">
             <textarea class="form__textarea" name="Viesti" id="message" rows="3" placeholder="Jätä viesti" required=""></textarea>
-            <label for="message" class="form__label">Jätä viesti</label>
+            <label for="message" class="form__label"> Jätä viesti</label>
           </div>
 
           <button type="submit" class="btn">Lähetä</button>
@@ -258,5 +260,19 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="footer__contact">
+        <div class="footer__contact-info">
+          <p>Niko Lehtinen</p>
+          <p>Email: niko.lehtinen1987@gmail.com</p>
+          <p>Puh: 0408358370</p>
+        </div>
+        <div class="footer__social-icons">
+          <a href="https://github.com/Nikojuu"><span class="icon-github"> </span></a>
+          <span class="icon-linkedin"></span>
+        </div>
+      </div>
+      <p class="copyright"><span id="year"></span> &copy;Niko Lehtinen</p>
+    </footer>
   </body>
 </html>
