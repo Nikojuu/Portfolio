@@ -1,7 +1,7 @@
 @use "./base" as *;
 .contact {
   &__section {
-    background-color: var(--background-black);
+    background: linear-gradient(to bottom, var(--background-primary));
   }
 
   &__form {

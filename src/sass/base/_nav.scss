@@ -1,8 +1,9 @@
 @use "./base" as *;
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
   z-index: 1000;
 }
 .navbar {
@@ -10,7 +11,8 @@ header {
 
   width: 100%;
 
-  background-color: var(--background-black);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -63,7 +65,7 @@ header {
         font-size: 2rem;
         font-weight: 500;
         text-transform: uppercase;
-        color: var(--color-grey-light-4);
+        color: var(--color-white);
 
         letter-spacing: 0.3px;
         position: relative;

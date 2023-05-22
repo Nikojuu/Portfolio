@@ -26,10 +26,10 @@
         <a href="#" class="navbar__logo"><span> Niko </span></a>
         <div class="navbar__right">
           <ul class="navbar__links">
-            <li><a href="#">Palvelut</a></li>
-            <li><a href="#">Taidot</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Ota yhteyttä</a></li>
+            <li><a href="#particles">Taidot</a></li>
+            <li><a href="#projects">Projektit</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#name">Ota yhteyttä</a></li>
           </ul>
         </div>
       </nav>
@@ -47,8 +47,9 @@
             <a href="https://github.com/Nikojuu"
               ><span class="icon-github"> </span
             ></a>
-
-            <span class="icon-linkedin"></span>
+            <a href="https://www.linkedin.com/in/niko-lehtinen-a3938b276/">
+              <span class="icon-linkedin"></span>
+            </a>
           </div>
         </h1>
       </div>
@@ -121,7 +122,7 @@
         <p>
           Osaan kehittää moderneja interaktiivisia sekä responsiivisia
           nettisivuja. Parhaiten tutuiksi ovat tullee teknologiat kuten HTML,
-          CSS(sass), javaScript ja React kirjasto.Hieman kokemusta myös backend
+          CSS(sass), javaScript ja React.Hieman kokemusta myös backend
           kehityksestä NodeJs kanssa työskentelystä, mutta pääpainotteeni
           toistaiseksi on Frontend kehitys.
         </p>
@@ -129,8 +130,8 @@
       <article class="article article__right">
         <p>
           Lisäksi minulla on kokemusta suunnittelusta ja vektorigrafiikan
-          työkaluista, kuten Figma ja Inkscape.Lisäksi hieman
-          kuvankäsittelytaitoja käyttäen Gimp ohjelmaa, olen kyllä harkinnut
+          työkaluista, kuten Figma ja Inkscape.Osaan myös jonkin verran
+          kuvankäsittelyä käyttäen Gimp ohjelmaa, olen kyllä harkinnut
           siirtyväni Adoben ohjelmistojen pariin jos/kun käyttö lisääntyy.
         </p>
       </article>
@@ -149,7 +150,10 @@
             target="_blank"
             >Kurssi <span class="icon-external-link"></span
           ></a>
-          <a href="#" class="btn btn-sertificate" target="_blank"
+          <a
+            href="https://www.udemy.com/certificate/UC-960b9f3e-ef34-44a7-a73f-1a27d66da57a/"
+            class="btn btn-sertificate"
+            target="_blank"
             >Sertifikaatti <span class="icon-external-link"></span
           ></a>
         </div>
@@ -166,7 +170,10 @@
             target="_blank"
             >Kurssi <span class="icon-external-link"></span>
           </a>
-          <a href="#" class="btn btn-sertificate" target="_blank"
+          <a
+            href="https://www.udemy.com/certificate/UC-89fa9285-8b3f-4f70-b211-3b9235b282c2/"
+            class="btn btn-sertificate"
+            target="_blank"
             >Sertifikaatti <span class="icon-external-link"></span
           ></a>
         </div>
@@ -187,13 +194,16 @@
             target="_blank"
             >Kurssi <span class="icon-external-link"></span
           ></a>
-          <a href="#" class="btn btn-sertificate" target="_blank"
+          <a
+            href="https://www.udemy.com/certificate/UC-63ff0e20-6046-4f61-9490-1419cbe6d6db/"
+            class="btn btn-sertificate"
+            target="_blank"
             >Sertifikaatti <span class="icon-external-link"></span
           ></a>
         </div>
       </div>
     </section>
-    <section class="projects__section container-grid">
+    <section class="projects__section container-grid" id="projects">
       <h2 class="mt-medium">Tekemäni projektit</h2>
       <div class="vertical__line-left"></div>
       <div class="horizontal__line-left"></div>
@@ -209,8 +219,15 @@
           tutoriaali opetusten jälkeen
         </p>
         <div class="projects__links">
-          <a href="#" class="btn" target="_blank">GitHub</a>
-          <a href="#" class="btn" target="_blank">Live</a>
+          <a
+            href="https://github.com/Nikojuu/Nokkakivi"
+            class="btn"
+            target="_blank"
+            >GitHub</a
+          >
+          <a href="https://www.nokkakivi.fi/" class="btn" target="_blank"
+            >Live</a
+          >
         </div>
       </div>
 
@@ -228,12 +245,16 @@
           tutoriaali opetusten jälkeen
         </p>
         <div class="projects__links">
-          <a href="#" class="btn" target="_blank">GitHub</a>
-          <a href="#" class="btn" target="_blank">Live</a>
+          <a href="https://github.com/Nikojuu" class="btn" target="_blank"
+            >GitHub</a
+          >
+          <a href="https://www.hienohelma.fi/" class="btn" target="_blank"
+            >Live</a
+          >
         </div>
       </div>
     </section>
-    <section class="about__section container-grid">
+    <section class="about__section container-grid" id="aboutme">
       <h2 class="mt-medium">About Me</h2>
       <div class="vertical__line-left"></div>
       <div class="horizontal__line-left"></div>
@@ -257,7 +278,7 @@
           uusiin haasteisiin. Olen tietoinen omasta osaamisestani, enkä ota
           vastaan projektia, jos en voi toimittaa haluttua lopputulosta.
         </p>
-        <a href="#" class="btn" target="_blank">Ota yhteyttä!</a>
+        <a href="#name" class="btn">Ota yhteyttä!</a>
       </article>
 
       <div class="about__picture">
@@ -319,7 +340,6 @@
     <footer class="footer">
       <div class="footer__contact">
         <div class="footer__contact-info">
-          <p>Niko Lehtinen</p>
           <p>Email: niko.lehtinen1987@gmail.com</p>
           <p>Puh: 0408358370</p>
         </div>
@@ -327,7 +347,9 @@
           <a href="https://github.com/Nikojuu"
             ><span class="icon-github"> </span
           ></a>
-          <span class="icon-linkedin"></span>
+          <a href="https://www.linkedin.com/in/niko-lehtinen-a3938b276/">
+            <span class="icon-linkedin"></span>
+          </a>
         </div>
       </div>
       <p class="copyright"><span id="year"></span> &copy;Niko Lehtinen</p>

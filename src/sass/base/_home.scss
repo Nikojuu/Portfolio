@@ -1,7 +1,7 @@
 @use "./base" as *;
 
 .heading-section {
-  background-color: var(--background-black);
+  background: linear-gradient(to bottom, var(--background-primary));
 
   min-height: 100vh;
 }
@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: start;
   margin-top: 5vw;
+  padding-top: 10vh;
 
   & h1 {
     width: 27vw;
@@ -44,6 +45,7 @@
   }
   &__image {
     grid-column: 5 / -1;
+    padding-top: 10vh;
     z-index: 3;
     & img {
       width: 100%;

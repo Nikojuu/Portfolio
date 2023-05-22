@@ -1,7 +1,7 @@
 @use "./base" as *;
 
 .about__section {
-  background-color: var(--background-darkgrey);
+  background: linear-gradient(to bottom, var(--background-secondary));
   position: relative;
   row-gap: 8rem;
   padding-bottom: 3rem;

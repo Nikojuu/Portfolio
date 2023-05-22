@@ -1,8 +1,8 @@
 @use "./base" as *;
 
 .sertificate-section {
-  background-color: var(--background-darkgrey);
-
+  // background-color: var(--background-darkgrey);
+  background: linear-gradient(to bottom, var(--background-secondary));
   row-gap: 0;
 
   & h3 {

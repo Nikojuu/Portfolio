@@ -1,6 +1,7 @@
 :root {
   --color-primary: #eb038d;
-
+  --background-primary: #111, #222222, #222222, #222222, #111;
+  --background-secondary: #222222, #444444, #444444, #444444, #222222;
   --background-black: #100f0d;
   --background-darkgrey: #2d2d2d;
   --color-white: #ffffff;
@@ -35,6 +36,7 @@ html {
   font-size: 62.5%; // 1 Rem = 10px 10px/16px = 62,5
   // font-family: "Josefin Sans", sans-serif;
   font-family: "Jockey One", sans-serif;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
