@@ -18,12 +18,20 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="/src/js/index.js" type="module"></script>
+    <script
+      src="https://kit.fontawesome.com/3224e9bcfc.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./src/sass/main.scss" />
   </head>
   <body>
     <header>
       <nav class="navbar">
         <a href="#" class="navbar__logo"><span> Niko </span></a>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
         <div class="navbar__right">
           <ul class="navbar__links">
             <li><a href="#particles">Taidot</a></li>
@@ -54,7 +62,7 @@
         </h1>
       </div>
       <div class="heading__image">
-        <img src="./src/img/Edited-test.png" alt="Profile picture" />
+        <img src="./src/img/minavalmis1.webp" alt="Profile picture" />
       </div>
     </section>
 
@@ -234,15 +242,18 @@
       <div class="vertical__line-right"></div>
       <div class="horizontal__line-right"></div>
       <div class="projects__image projects__image-2 mt-medium">
-        <img src="./src/img/nokkisProjectShow.png" alt="Hienohelma projekti" />
+        <img
+          src="./src/img/hienohelmaProjectShow.png"
+          alt="Hienohelma projekti"
+        />
       </div>
 
       <div class="projects__description projects__description-2 mt-large">
         <h3>Hienohelman sivut</h3>
         <p>
-          Ensimmäiset itsetekemäni nettisivut Nokkakiven huvipuistolle. Tässä
-          projektissa pääsin toteuttamaan html css javascriptiä ensi kertaa
-          tutoriaali opetusten jälkeen
+          Hienohelmalle tehtiin uudet nettisivut Vilkkaan verkkokauppapalvelun
+          avulla. Ulkoasun tekemisen lisäksi tässä projektissa haastavin osuus
+          oli myytävien tuotteiden tietokannan luominen.
         </p>
         <div class="projects__links">
           <a href="https://github.com/Nikojuu" class="btn" target="_blank"
@@ -282,7 +293,7 @@
       </article>
 
       <div class="about__picture">
-        <img src="/src/img/Edited-test.png" alt="" />
+        <img src="/src/img/minavalmis1.webp" alt="about picture" />
       </div>
     </section>
     <section class="contact__section container-grid">

@@ -10,6 +10,7 @@ header {
   grid-column: 1 / -1;
 
   width: 100%;
+  height: 90px;
 
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
@@ -17,6 +18,22 @@ header {
   align-items: baseline;
   justify-content: space-between;
   border-bottom: 1px solid var(--color-grey-light-1);
+  @media only screen and (max-width: $bp-large) {
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  & .checkbtn {
+    font-size: 3rem;
+    color: var(--color-white);
+    cursor: pointer;
+  }
+  & #check {
+    display: none;
+  }
 
   &__logo {
     margin-left: 5rem;
@@ -56,6 +73,9 @@ header {
     display: flex;
 
     gap: 7rem;
+    @media only screen and (max-width: $bp-large) {
+      display: block;
+    }
 
     & li {
       list-style: none;
@@ -70,15 +90,14 @@ header {
         letter-spacing: 0.3px;
         position: relative;
         padding: 1px 10px 1px;
-        transition: all 0.3s;
+        transition: transform 0.3s, color 0.3s;
 
         &:hover,
         &:focus {
           border-radius: 5px;
           color: var(--color-primary);
           transform: translateY(-3px);
-
-          box-shadow: 0px 3px 8px -2px var(--color-primary);
+          border-bottom: solid 2px var(--color-primary);
         }
       }
     }
