@@ -726,6 +726,13 @@ const writeLoop = async ()=>{
     }
 };
 writeLoop();
+//////////Navigation////////////
+const checkbox = document.getElementById("check");
+const menu = document.querySelector("nav");
+menu.addEventListener("click", (event)=>{
+    console.log(event.target);
+    if (event.target.closest("a")) checkbox.checked = false;
+});
 /////////copyright year
 let date = new Date().getFullYear();
 document.getElementById("year").innerHTML = date;
@@ -849,7 +856,6 @@ const skillsTextAnimation = async function(paragraphNumber) {
         } else if (i >= paragraphNumber - 1 && i >= 2 && paragraphNumber === 3) {
             // animate only the third paragraph
             articleText[i].classList.add("active");
-            console.log(articleText[i]);
             await waitTime(300);
         }
     }

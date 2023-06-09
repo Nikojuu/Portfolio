@@ -43,7 +43,8 @@
     background-size: 50% auto;
     background-repeat: no-repeat;
     background-position: left -10%;
-    background-color: #0d0d0da6;
+    background: linear-gradient(to bottom, var(--background-primary));
+    box-shadow: $box-shadow;
 
     display: flex;
     flex-direction: column;

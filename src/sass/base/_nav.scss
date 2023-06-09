@@ -1,41 +1,117 @@
 @use "./base" as *;
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-.navbar {
-  grid-column: 1 / -1;
+// header {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   z-index: 1000;
+// }
+// .navbar {
+//   grid-column: 1 / -1;
 
-  width: 100%;
-  height: 90px;
+//   width: 100%;
+//   height: 90px;
 
+//   background: rgba(0, 0, 0, 0.5);
+//   backdrop-filter: blur(10px);
+//   display: flex;
+//   align-items: baseline;
+//   justify-content: space-between;
+//   border-bottom: 1px solid var(--color-grey-light-1);
+//   @media only screen and (max-width: $bp-large) {
+//     height: 100vh;
+//     text-align: center;
+//     flex-direction: column;
+//     justify-content: start;
+//     align-items: center;
+//   }
+
+//   & .checkbtn {
+//     font-size: 3rem;
+//     color: var(--color-white);
+//     cursor: pointer;
+//   }
+//   & #check {
+//     display: none;
+//   }
+
+//   &__logo {
+//     margin-left: 5rem;
+
+//     font-family: "Jockey One", sans-serif;
+//     list-style: none;
+//     text-decoration: none;
+//     font-size: 44px;
+//     color: var(--color-white);
+//     position: relative;
+
+//     &::before {
+//       content: "";
+//       width: 0;
+//       height: 5px;
+//       border-radius: 2px;
+//       background: var(--color-primary);
+//       position: absolute;
+//       left: 0;
+//       bottom: 6px;
+//     }
+//     &:hover::before {
+//       width: 120%;
+//       transition: all 0.3s;
+//     }
+
+//     &::first-letter {
+//       color: var(--color-primary);
+//       font-size: 60px;
+//     }
+//   }
+
+//   &__right {
+//     padding-right: 10rem;
+//   }
+//   &__links {
+//     display: flex;
+
+//     gap: 7rem;
+//     @media only screen and (max-width: $bp-large) {
+//       display: block;
+//     }
+
+//     & li {
+//       list-style: none;
+//       & a {
+//         display: inline-block;
+//         text-decoration: none;
+//         font-size: 2rem;
+//         font-weight: 500;
+//         text-transform: uppercase;
+//         color: var(--color-white);
+
+//         letter-spacing: 0.3px;
+//         position: relative;
+//         padding: 1px 10px 1px;
+//         transition: transform 0.3s, color 0.3s;
+
+//         &:hover,
+//         &:focus {
+//           border-radius: 5px;
+//           color: var(--color-primary);
+//           transform: translateY(-3px);
+//           border-bottom: solid 2px var(--color-primary);
+//         }
+//       }
+//     }
+//   }
+// }
+nav {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--color-grey-light-1);
-  @media only screen and (max-width: $bp-large) {
-    height: 100vh;
-    text-align: center;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-  }
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 100000;
 
-  & .checkbtn {
-    font-size: 3rem;
-    color: var(--color-white);
-    cursor: pointer;
-  }
-  & #check {
-    display: none;
-  }
-
-  &__logo {
+  & .logo {
     margin-left: 5rem;
 
     font-family: "Jockey One", sans-serif;
@@ -44,7 +120,11 @@ header {
     font-size: 44px;
     color: var(--color-white);
     position: relative;
-
+    display: inline-block;
+    &::first-letter {
+      color: var(--color-primary);
+      font-size: 60px;
+    }
     &::before {
       content: "";
       width: 0;
@@ -59,38 +139,41 @@ header {
       width: 120%;
       transition: all 0.3s;
     }
-
-    &::first-letter {
-      color: var(--color-primary);
-      font-size: 60px;
-    }
   }
 
-  &__right {
-    padding-right: 10rem;
-  }
-  &__links {
-    display: flex;
-
-    gap: 7rem;
-    @media only screen and (max-width: $bp-large) {
-      display: block;
+  & ul {
+    list-style: none;
+    float: right;
+    margin-right: 2rem;
+    @media (max-width: $bp-large) {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: black;
+      top: 80px;
+      transform: translateX(-100%);
+      text-align: center;
+      transition: all 0.5s;
     }
 
     & li {
-      list-style: none;
-      & a {
-        display: inline-block;
-        text-decoration: none;
-        font-size: 2rem;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: var(--color-white);
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 1.5rem;
+      font-size: 2rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: var(--color-white);
 
-        letter-spacing: 0.3px;
+      letter-spacing: 0.3px;
+      @media (max-width: $bp-large) {
+        display: block;
+      }
+      & a {
         position: relative;
         padding: 1px 10px 1px;
         transition: transform 0.3s, color 0.3s;
+        padding: 1px 10px 1px;
 
         &:hover,
         &:focus {
@@ -98,6 +181,44 @@ header {
           color: var(--color-primary);
           transform: translateY(-3px);
           border-bottom: solid 2px var(--color-primary);
+        }
+      }
+    }
+  }
+  & .checkbtn {
+    font-size: 3rem;
+    color: var(--color-white);
+    float: right;
+    line-height: 8rem;
+    margin-right: 4rem;
+    cursor: pointer;
+    display: none;
+    & i.fa-bars {
+      display: inline-block; // Display hamburger icon by default
+    }
+
+    & i.fa-times {
+      display: none; // Hide close icon by default
+    }
+    @media (max-width: $bp-large) {
+      display: block;
+    }
+  }
+  & #check {
+    display: none;
+
+    @media (max-width: $bp-large) {
+      &:checked ~ ul {
+        transform: translateX(0%);
+      }
+
+      &:checked ~ .checkbtn {
+        & i.fa-bars {
+          display: none; // Hide hamburger icon when #check is checked
+        }
+
+        & i.fa-times {
+          display: inline-block; // Display close icon when #check is checked
         }
       }
     }

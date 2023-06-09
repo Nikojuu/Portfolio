@@ -159,7 +159,7 @@ const skillsTextAnimation = async function (paragraphNumber) {
     } else if (i >= paragraphNumber - 1 && i >= 2 && paragraphNumber === 3) {
       // animate only the third paragraph
       articleText[i].classList.add("active");
-      console.log(articleText[i]);
+
       await waitTime(300);
     }
   }

@@ -2,7 +2,8 @@
 
 .heading-section {
   background: linear-gradient(to bottom, var(--background-primary));
-
+  position: relative;
+  z-index: -1;
   min-height: 100vh;
 }
 .heading {

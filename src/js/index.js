@@ -130,6 +130,16 @@ const writeLoop = async () => {
 };
 
 writeLoop();
+//////////Navigation////////////
+const checkbox = document.getElementById("check");
+const menu = document.querySelector("nav");
+
+menu.addEventListener("click", (event) => {
+  console.log(event.target);
+  if (event.target.closest("a")) {
+    checkbox.checked = false;
+  }
+});
 
 /////////copyright year
 let date = new Date().getFullYear();
