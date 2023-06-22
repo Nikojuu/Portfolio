@@ -1,14 +1,13 @@
 @use "./base" as *;
 
 .sertificate-section {
-  // background-color: var(--background-darkgrey);
   background: linear-gradient(to bottom, var(--background-secondary));
   row-gap: 0;
 
   & h3 {
     grid-column: 4 / 6;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
 }
 
@@ -18,26 +17,49 @@
 
     transform: translateX(-300%);
     transition: all 1s ease-in-out;
+    @media only screen and (max-width: $bp-largest) {
+      padding-top: 4rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      padding-top: 2rem;
+    }
   }
   &__left {
     grid-column: 3 / span 2;
     padding-right: 5rem;
+    @media only screen and (max-width: $bp-largest) {
+      grid-column: 2 / span 3;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      padding-right: 0;
+    }
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 2 / 8;
+    }
   }
   &__right {
     grid-column: span 2;
+    @media only screen and (max-width: $bp-largest) {
+      grid-column: span 3;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 2 / 8;
+    }
   }
 }
 .sertificate {
-  grid-column: 3 / 7;
+  grid-column: 2 / 8;
   display: flex;
-  margin-top: 10rem;
+  margin: 5rem auto;
   justify-content: center;
   gap: 5rem;
+  flex-wrap: wrap;
 
   &__card {
-    transform: translateX(-500%);
+    transform: translateY(-200%);
+    opacity: 0;
     transition: all 1s ease-in-out;
-    width: 30%;
+    width: 29%;
     height: auto;
     background-image: url("/src/img/Udemy.png");
     background-size: 50% auto;
@@ -55,14 +77,23 @@
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     padding: 4rem 3rem;
-    margin-bottom: 10rem;
+
+    @media only screen and (max-width: $bp-large) {
+      width: 100%;
+    }
 
     & ul {
       padding-top: 3rem;
       margin-left: 2rem;
-      margin-bottom: 4rem;
+      margin-bottom: 1rem;
       color: var(--color-white);
-      font-size: 2rem;
+      font-size: 1.5rem;
+      @media only screen and (max-width: $bp-small) {
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        padding-top: 1rem;
+        font-size: 1.5rem;
+      }
     }
 
     & .btn-sertificate {
@@ -72,6 +103,14 @@
       box-shadow: none;
       align-items: center;
 
+      @media only screen and (max-width: $bp-large) {
+        margin-top: 2rem;
+        width: 30%;
+      }
+      @media only screen and (max-width: $bp-small) {
+        margin-top: 2rem;
+        width: 80%;
+      }
       &:first-of-type {
         margin-top: auto;
       }

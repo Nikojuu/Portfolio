@@ -25,23 +25,6 @@
     <link rel="stylesheet" href="./src/sass/main.scss" />
   </head>
   <body>
-    <!-- <header>
-      <nav class="navbar">
-        <a href="#" class="navbar__logo"><span> Niko </span></a>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fa-solid fa-bars"></i>
-        </label>
-        <div class="navbar__right">
-          <ul class="navbar__links">
-            <li><a href="#particles">Taidot</a></li>
-            <li><a href="#projects">Projektit</a></li>
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#name">Ota yhteyttä</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header> -->
     <nav>
       <input type="checkbox" id="check" />
       <label for="check" class="checkbtn">
@@ -66,16 +49,18 @@
           <span class="heading__typewriter"></span
           ><span class="heading__cursor">|</span><br />
           Teen Nettisivuja!
-
-          <div class="social-icons">
-            <a href="https://github.com/Nikojuu"
-              ><span class="icon-github"> </span
-            ></a>
-            <a href="https://www.linkedin.com/in/niko-lehtinen-a3938b276/">
-              <span class="icon-linkedin"></span>
-            </a>
-          </div>
         </h1>
+        <div class="social-icons">
+          <a href="https://github.com/Nikojuu" target="_blank"
+            ><span class="icon-github"></span
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/niko-lehtinen-a3938b276/"
+            target="_blank"
+          >
+            <span class="icon-linkedin"></span>
+          </a>
+        </div>
       </div>
       <div class="heading__image">
         <img src="./src/img/minavalmis1.webp" alt="Profile picture" />
@@ -85,7 +70,7 @@
     <section class="skill-section container-grid">
       <div id="particles"></div>
       <h2>Tekninen osaaminen</h2>
-      <div class="cards-container mt-medium">
+      <div class="cards-container">
         <div class="card">
           <h3>Develop</h3>
           <div class="card__skills card__skills--hidden">
@@ -186,7 +171,7 @@
           <ul>
             <li>28 tuntia video koulutusmateriaalia</li>
             <li>Kehittynein CSS ja Sass kurssi</li>
-            <li>Modernit CSS tekniikat (Flexbox,Grid)Responsiivisuus</li>
+            <li>Modernit CSS tekniikat (Flexbox,Grid)</li>
           </ul>
           <a
             href="https://www.udemy.com/course/advanced-css-and-sass/"
@@ -231,11 +216,11 @@
       <h2 class="mt-medium">Tekemäni projektit</h2>
       <div class="vertical__line-left"></div>
       <div class="horizontal__line-left"></div>
-      <div class="projects__image projects__image-1 mt-medium">
+      <div class="projects__image projects__image-1">
         <img src="./src/img/nokkisProjectShow.png" alt="Nokkakivi projekti" />
       </div>
 
-      <div class="projects__description projects__description-1 mt-large">
+      <div class="projects__description projects__description-1">
         <h3>Nokkakiven sivut</h3>
         <p>
           Ensimmäiset itsetekemäni nettisivut Nokkakiven huvipuistolle. Tässä
@@ -257,14 +242,14 @@
 
       <div class="vertical__line-right"></div>
       <div class="horizontal__line-right"></div>
-      <div class="projects__image projects__image-2 mt-medium">
+      <div class="projects__image projects__image-2">
         <img
           src="./src/img/hienohelmaProjectShow.png"
           alt="Hienohelma projekti"
         />
       </div>
 
-      <div class="projects__description projects__description-2 mt-large">
+      <div class="projects__description projects__description-2">
         <h3>Hienohelman sivut</h3>
         <p>
           Hienohelmalle tehtiin uudet nettisivut Vilkkaan verkkokauppapalvelun
@@ -282,13 +267,12 @@
       </div>
     </section>
     <section class="services-section container-grid">
-      <h2 class="mt-medium">Palvelut</h2>
+      <h2>Palvelut</h2>
       <div class="services-container">
         <article class="services-card">
           <h4>Responsiiviset nettisivut</h4>
 
-          <i class="services-card-icon fa-solid fa-mobile-screen"></i>
-
+          <i class="services-card-icon fa-solid fa-display"></i>
           <p>
             Nettisivujen tärkein ominaisuus nykypäivänä on että ne toimmivat
             sulavasti niin tietokoneella kuin kännykällä ja millä tahansa.
@@ -298,7 +282,8 @@
         </article>
         <article class="services-card">
           <h4>Frontend kehitys</h4>
-          <i class="services-card-icon fa-solid fa-laptop-code"></i>
+
+          <i class="services-card-icon fa-solid fa-code"></i>
           <p>
             Olen enemmän keskittynyt "Frontti" puoleen eli ulkoasun ja
             käyttäjäkokemuksen parantamiseen ja rakentamiseen. Pääsääntöisesti
@@ -307,16 +292,17 @@
         </article>
         <article class="services-card">
           <h4>Web-suunnittelu / UI</h4>
-          <i class="services-card-icon fa-solid fa-pen-ruler"></i>
+
+          <i class="services-card-icon fa-solid fa-bezier-curve"></i>
           <p>
             "Hyvin suunniteltu on puoliksi tehty" sanonta pätee myös
-            nettisivuihin Suunnittelen nettisivut pääsääntöisesti Figmaa
+            nettisivuihin. Suunnittelen nettisivut pääsääntöisesti Figmaa
             käyttämällä.
           </p>
         </article>
         <article class="services-card">
           <h4>Kuvankäsittely</h4>
-          <i class="services-card-icon fa-solid fa-panorama"></i>
+          <i class="services-card-icon fa-sharp fa-solid fa-palette"></i>
           <p>
             Hyvät kuvat ovat isossa roolissa nettisivujen tekemisessä. Kuvista
             yleensä ainakin on saatava "kevyet" laadusta tinkimättä editoimalla

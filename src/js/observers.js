@@ -11,16 +11,15 @@ const leftArticle = document.querySelectorAll(".article__left");
 const articleText = document.querySelectorAll(".article p");
 const sertificates = document.querySelector(".sertificate");
 const sertificateCards = document.querySelectorAll(".sertificate__card");
+const serviceContainer = document.querySelector(".services-container");
+const serviceCards = document.querySelectorAll(".services-card");
 // helper waitTime function just pass Millseconds you want to wait!
 const waitTime = function (ms) {
   return new Promise((resolve) => {
     setTimeout(resolve, ms);
   });
 };
-// scroll on top of page at refresh site//
-window.onload = function () {
-  window.scrollTo(0, 0);
-};
+
 ///// Skill section observers observs cards and pass functions into it///
 const observerSkills = new IntersectionObserver(
   async (entries) => {
@@ -110,7 +109,7 @@ projectsImg.forEach((img) => {
   imgObserver.observe(img);
 });
 
-///// Observer sertificates & About///
+///// Observer sertificates & About & Services///
 const observerSertificates = new IntersectionObserver(
   async (entries) => {
     const [entry] = entries;
@@ -134,8 +133,13 @@ const observerSertificates = new IntersectionObserver(
       entry.isIntersecting &&
       entry.target.classList.contains("sertificate")
     ) {
-      serticicateCardAnimation();
+      cardAnimation(sertificateCards);
       observerSertificates.unobserve(sertificates);
+    } else if (
+      entry.isIntersecting &&
+      entry.target.classList.contains("services-container")
+    ) {
+      cardAnimation(serviceCards);
     }
   },
   {
@@ -147,6 +151,7 @@ const observerSertificates = new IntersectionObserver(
 observerSertificates.observe(leftArticle[0]);
 observerSertificates.observe(sertificates);
 observerSertificates.observe(leftArticle[1]);
+observerSertificates.observe(serviceContainer);
 // Sertificate functions//
 
 const skillsTextAnimation = async function (paragraphNumber) {
@@ -165,10 +170,10 @@ const skillsTextAnimation = async function (paragraphNumber) {
   }
 };
 
-const serticicateCardAnimation = async function () {
-  for (let i = sertificateCards.length - 1; i >= 0; i--) {
-    const card = sertificateCards[i];
+const cardAnimation = async function (cards) {
+  for (let i = 0; i < cards.length; i++) {
+    const card = cards[i];
     card.classList.add("active");
-    await waitTime(300);
+    await waitTime(200);
   }
 };

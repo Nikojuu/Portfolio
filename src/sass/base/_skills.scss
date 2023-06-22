@@ -18,35 +18,57 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   transition: left 0.5s ease-in-out;
+  margin-top: 6rem;
+  @media only screen and (max-width: $bp-largest) {
+    grid-column: 2 / 8;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 3 / span 4;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    grid-column: 2 / 8;
+  }
 }
 
 .card {
   background-color: #0d0d0da6;
   width: 45%;
-  padding: 1rem 6rem;
+  padding: 2rem 2rem;
   box-shadow: $box-shadow;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid var(--color-primary);
   margin-bottom: 10vh;
+  @media only screen and (max-width: $bp-medium) {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
   &__skills {
     padding-top: 3rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 4.5rem;
-    transition: opacity 2s;
 
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    transition: opacity 2s;
+    @media only screen and (max-width: $bp-largest) {
+      gap: 1rem;
+    }
     &__skill {
-      width: 10rem;
+      width: 9rem;
       display: flex;
       flex-direction: column;
+      flex-basis: calc(25%);
       align-items: center;
       gap: 1rem;
       filter: grayscale(100%);
-
+      & h4 {
+        font-size: 1rem;
+      }
       & img {
         width: 100%;
       }

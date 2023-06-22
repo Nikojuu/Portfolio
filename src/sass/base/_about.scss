@@ -1,24 +1,44 @@
 @use "./base" as *;
 
 .about__section {
-  background: linear-gradient(to bottom, var(--background-secondary));
+  background: linear-gradient(to bottom, var(--background-primary));
   position: relative;
-  row-gap: 8rem;
-  padding-bottom: 3rem;
+  row-gap: 5vw;
+  padding-bottom: 7rem;
 
   & article p {
     padding-top: 0;
     margin-bottom: 3rem;
+    @media only screen and (max-width: $bp-large) {
+      margin-bottom: 2rem;
+    }
   }
   & article {
     z-index: 0;
+  }
+  & .vertical__line-left {
+    grid-row: 1 / 4;
+    top: 8vw;
+    @media only screen and (max-width: $bp-largest) {
+      grid-column: 1 /2;
+    }
+  }
+  & .horizontal__line {
+    grid-row: 3 / 4;
   }
 }
 
 .about__picture {
   grid-column: 5 / 8;
-  grid-row: 1 / 4;
-  margin-top: 7rem;
+  grid-row: 2 / 4;
+  margin-top: -9rem;
+  @media only screen and (max-width: $bp-large) {
+    margin-top: -2rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    margin-top: 0;
+    grid-column: 2 / 7;
+  }
 
   & img {
     width: 100%;

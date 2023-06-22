@@ -3,19 +3,15 @@
 .heading-section {
   background: linear-gradient(to bottom, var(--background-primary));
   position: relative;
-  z-index: -1;
-  min-height: 100vh;
 }
 .heading {
   grid-column: 1 / span 4;
-  display: flex;
-  justify-content: center;
-  align-items: start;
+  margin-inline: auto;
   margin-top: 5vw;
   padding-top: 10vh;
 
   & h1 {
-    width: 27vw;
+    width: 29vw;
 
     position: relative;
     &::before {
@@ -40,6 +36,16 @@
       border-radius: 5px;
       animation: expandHorizontal 2s ease-in-out;
     }
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 8.5vw;
+      width: 75vw;
+      &::before {
+        height: 46vw;
+      }
+      &::after {
+        width: 100%;
+      }
+    }
   }
   &__typewriter {
     color: var(--color-primary);
@@ -51,24 +57,35 @@
     & img {
       width: 100%;
     }
+    @media only screen and (max-width: $bp-medium) {
+      padding-top: 0;
+      grid-column: 2 / 8;
+    }
   }
   &__cursor {
     color: var(--color-primary);
     animation: blink 1s linear infinite;
   }
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 2 / 7;
+  }
 }
 
 .social-icons {
   color: var(--color-grey-dark-2);
-  position: absolute;
-  left: 3rem;
-  bottom: -16rem;
-  font-size: 50px;
+  display: flex;
+  font-size: clamp(5rem, 5vw, 6rem);
+  margin-top: 4rem;
+  gap: 3rem;
 
   & span {
     transition: all 0.3s;
     &:hover {
       color: white;
     }
+  }
+  @media only screen and (max-width: $bp-largest) {
+    margin-top: 2rem;
+    justify-content: center;
   }
 }
