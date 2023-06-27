@@ -4,7 +4,11 @@
   &__section {
     background: linear-gradient(to bottom, var(--background-primary));
     position: relative;
-    padding-bottom: 20rem;
+    padding-bottom: 12rem;
+    overflow: hidden;
+    @media only screen and (max-width: $bp-small) {
+      padding-bottom: 5rem;
+    }
   }
   &__image {
     grid-column: 3 / 6;
@@ -40,6 +44,7 @@
     grid-row: 2;
     justify-self: end;
     margin-top: 14vh;
+    overflow: hidden;
     @media only screen and (max-width: $bp-small) {
       margin-top: 3rem;
     }
@@ -84,10 +89,9 @@
     display: flex;
     justify-content: end;
     gap: 5rem;
-
-    @media only screen and (max-width: $bp-small) {
-      justify-content: space-between;
-      gap: 0;
+    @media only screen and (max-width: $bp-large) {
+      margin-top: 1rem;
+      gap: 2rem;
     }
   }
 }

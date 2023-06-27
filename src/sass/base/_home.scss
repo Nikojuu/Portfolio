@@ -3,6 +3,7 @@
 .heading-section {
   background: linear-gradient(to bottom, var(--background-primary));
   position: relative;
+  min-height: 100vh;
 }
 .heading {
   grid-column: 1 / span 4;

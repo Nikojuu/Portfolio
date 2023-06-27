@@ -5,11 +5,17 @@
 
   padding: 5rem;
   border-top: 1px solid var(--color-primary);
-
+  @media only screen and (max-width: $bp-large) {
+    padding: 2rem;
+  }
   &__social-icons {
     color: var(--color-grey-dark-3);
     padding: 1.5rem;
     font-size: 50px;
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 36px;
+      padding: 0.3rem;
+    }
 
     & span {
       transition: all 0.3s;
@@ -24,7 +30,13 @@
     justify-content: center;
     align-items: center;
     gap: 10rem;
-
+    @media only screen and (max-width: $bp-medium) {
+      gap: 2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      gap: 0;
+    }
     &-info p {
       padding: 0.5rem;
       font-size: 18px;
