@@ -183,6 +183,7 @@
     color: var(--color-black);
     width: 100%;
     max-width: 100%;
+    padding: 1.5rem 2rem;
 
     &:focus {
       outline: none;
@@ -214,5 +215,37 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem);
+  }
+}
+// Cookie banner
+
+#cookie-banner {
+  margin: 2rem;
+  position: fixed;
+  bottom: 1rem;
+
+  right: 1rem;
+  width: 30%;
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+  text-align: center;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9999; /* Ensures the banner is on top of other elements */
+  @media only screen and (max-width: $bp-medium) {
+    left: 1rem;
+    width: auto;
+  }
+  & .btn-cookie {
+    color: var(--color-white);
+    background-color: black;
+    text-shadow: none;
+    box-shadow: none;
+
+    &:hover {
+      color: var(--color-black);
+      background-color: var(--color-white);
+    }
   }
 }

@@ -1,4 +1,5 @@
-import { addContrast } from "./observers";
+import * as observers from "./observers";
+import * as cookies from "./cookie-consent";
 
 tsParticles.load("particles", {
   fps_limit: 60,
@@ -135,7 +136,6 @@ const checkbox = document.getElementById("check");
 const menu = document.querySelector("nav");
 
 menu.addEventListener("click", (event) => {
-  console.log(event.target);
   if (event.target.closest("a")) {
     checkbox.checked = false;
   }

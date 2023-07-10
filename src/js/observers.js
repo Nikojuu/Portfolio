@@ -102,7 +102,7 @@ projectsImg.forEach((img) => {
     },
     {
       root: null,
-      threshold: 0.7,
+      threshold: 0.4,
     }
   );
 

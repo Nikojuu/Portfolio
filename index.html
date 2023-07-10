@@ -1,10 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-C4C85HY834"
+    ></script>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <meta
+      name="description"
+      content="Web developer portfolio showcasing my skills and projects in front-end and Full-Stack development."
+    />
+    <meta
+      name="keywords"
+      content="web developer, portfolio, front-end development, Full-Stack, Web development "
+    />
+    <meta name="author" content="Niko Lehtinen" />
+    <meta
+      name="description"
+      lang="fi"
+      content="Web-kehittäjä-/suunnittelijan portfolio, jossa esittelen taitojani ja projektejani front-end ja Full-Stack kehityksestä"
+    />
+    <meta
+      name="keywords"
+      lang="fi"
+      content="Web-kehittäjä,Web-suunnittelu,Freelance, portfolio, Front-end, Full-Stack"
+    />
+
+    <title>Freelance Web-kehittäjän portfolio Niko Lehtinen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,6 +49,23 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./src/sass/main.scss" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/src/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/src/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/src/img/favicon-16x16.png"
+    />
   </head>
   <body>
     <nav>
@@ -41,6 +84,21 @@
         <li><a href="#name">Ota yhteyttä</a></li>
       </ul>
     </nav>
+    <div id="cookie-banner">
+      <p class="cookie-text">
+        Käytän Google-Analytic:siä seuraamaan nettisivujeni toimintaa EU:n
+        tietosuoja-asetuksen (GDPR) mukaisesti siihen on minunkin kysyttävä
+        hyväksyttekö evästeet?
+      </p>
+      <div class="button-container">
+        <button id="cookie-reject" class="btn btn-cookie">
+          Vain välttämättömät
+        </button>
+        <button id="cookie-accept" class="btn btn-cookie">
+          Hyväksy evästeet
+        </button>
+      </div>
+    </div>
     <section class="heading-section container-grid">
       <div class="heading">
         <h1>
@@ -131,7 +189,7 @@
         <p>
           Osaan kehittää moderneja interaktiivisia sekä responsiivisia
           nettisivuja. Parhaiten tutuiksi ovat tullee teknologiat kuten HTML,
-          CSS(sass), javaScript ja React.Hieman kokemusta myös backend
+          CSS(sass), javaScript ja React. Hieman kokemusta myös backend
           kehityksestä NodeJs kanssa työskentelystä, mutta pääpainotteeni
           toistaiseksi on Frontend kehitys.
         </p>
@@ -139,9 +197,8 @@
       <article class="article article__right">
         <p>
           Lisäksi minulla on kokemusta suunnittelusta ja vektorigrafiikan
-          työkaluista, kuten Figma ja Inkscape.Osaan myös jonkin verran
-          kuvankäsittelyä käyttäen Gimp ohjelmaa, olen kyllä harkinnut
-          siirtyväni Adoben ohjelmistojen pariin jos/kun käyttö lisääntyy.
+          työkaluista, kuten Figma ja Inkscape. Osaan myös jonkin verran
+          kuvankäsittelyä käyttäen Gimp ohjelmaa.
         </p>
       </article>
       <h3>Sertifikaatit</h3>
@@ -253,9 +310,8 @@
         <h3>Hienohelman sivut</h3>
         <p>
           Hienohelmalle tehtiin uudet nettisivut Vilkkaan verkkokauppapalvelun
-          avulla. Ulkoasun tekemisen lisäksi tässä projektissa haastavin osuus
-          oli myytävien tuotteiden tietokannan luominen.(Uudet sivut eivät ole
-          vielä Live tilassa)
+          avulla. Tässä projektissa luotiin sekä uusi ulkoasu, että myytävien
+          tuotteiden tietokanta. (Uudet sivut eivät ole vielä live tilassa.)
         </p>
         <div class="projects__links">
           <a href="https://github.com/Nikojuu" class="btn" target="_blank"
@@ -275,10 +331,10 @@
 
           <i class="services-card-icon fa-solid fa-display"></i>
           <p>
-            Nettisivujen tärkein ominaisuus nykypäivänä on että ne toimmivat
-            sulavasti niin tietokoneella kuin kännykällä ja millä tahansa.
-            Minulle tämä on itsestäänselvää teen kaikki nettisivuni
-            responsiivisiksi.
+            Nykypäivänä on tärkeää, että nettisivut toimivat sulavasti niin
+            tietokoneella kuin älypuhelimella, sekä muilla laitteilla.
+            Responsiivisuus on minulle itsestäänselvyys ja viimeistelen sivut
+            aina kaikille laitteille sopiviksi.
           </p>
         </article>
         <article class="services-card">
@@ -286,9 +342,9 @@
 
           <i class="services-card-icon fa-solid fa-code"></i>
           <p>
-            Olen enemmän keskittynyt "Frontti" puoleen eli ulkoasun ja
-            käyttäjäkokemuksen parantamiseen ja rakentamiseen. Pääsääntöisesti
-            käytän HTML,CSS,JS, Reactia ja voin avustaa näissä hommissa.
+            Pääasiassa olen keskittynyt "Frontti" puoleen, eli ulkoasun ja
+            käyttäjäkokemuksen parantamiseen sekä sivun rakentamiseen. Voin
+            avustaa HTML, CSS, JS, Reactin kanssa työskentelyssä.
           </p>
         </article>
         <article class="services-card">
@@ -296,41 +352,38 @@
 
           <i class="services-card-icon fa-solid fa-bezier-curve"></i>
           <p>
-            "Hyvin suunniteltu on puoliksi tehty" sanonta pätee myös
-            nettisivuihin. Suunnittelen nettisivut pääsääntöisesti Figmaa
-            käyttämällä.
+            Suunnittelen nettisivut pääsääntöisesti Figmaa käyttämällä. "Hyvin
+            suunniteltu on puoliksi tehty" sanonta pätee myös nettisivuihin.
           </p>
         </article>
         <article class="services-card">
           <h4>Kuvankäsittely</h4>
           <i class="services-card-icon fa-sharp fa-solid fa-palette"></i>
           <p>
-            Hyvät kuvat ovat isossa roolissa nettisivujen tekemisessä. Kuvista
-            yleensä ainakin on saatava "kevyet" laadusta tinkimättä editoimalla
-            kuvia, poistamaan taustoita, säätämään kontrastia ym. joihin käytän
-            yleensä Gimp ohjelmaa. Logojen ja vektorien tekemiseen /muokkaukseen
-            käytän pääsääntöisesti Inkscapea
+            Laadukkaat kuvat ovat suuressa roolissa nettisivuilla. Pystyn
+            poistamaan taustoja, säätämään kontrastia yms, hienosäätöä. Käytän
+            editointiin Gimp -ohjelmaa. Muokkaan kuvat kompakteiksi, jotteivat
+            ne hidasta sivujen lataamista. Logojen ja vektorien tekemiseen ja
+            muokkaukseen käytän pääsääntöisesti Inkscapea.
           </p>
         </article>
         <article class="services-card">
           <h4>SEO hakukoneoptimointi</h4>
           <i class="services-card-icon fa-brands fa-searchengin"></i>
           <p>
-            SEO eli hakukoneoptimointi on tärkeä osa nettisivujen tekemisessä,
-            onhan se tärkeää että sivustosi löytyy hyvin googlettamalla
-            rakennankin kaikki sivuni mahdollisimman hyvin hakukoineita
-            ajatellen.
+            SEO, eli hakukoneoptimointi kasvattaa nettisivujesi löydettävyyttä
+            hakukoneilla etsittäessä. Rakennan kaikki sivuni mahdollisimman
+            hyvin hakukoneita ajatellen.
           </p>
         </article>
         <article class="services-card">
           <h4>Sisällönhallinta ja verkkokauppa</h4>
           <i class="services-card-icon fa-brands fa-shopify"></i>
           <p>
-            Tarvitsetko verkkokaupan nettisivuillesi? Jos näin niin yleensä myös
-            tarvitset sisällönhallintajärjestelmän jolla hallinnoit tuotteitasi
-            ja muokkaat helposti sivujasi, minä voin auttaa rakentamalla sivut
-            Vilkas (suosittu suomalainen) tai Shopifyn
-            sisällönhallintajärjestelmän kanssa
+            Verkkokauppaa tehdessä käytän sisällönhallintajärjestelmää, jonka
+            avulla hallinnoit tuotteitasi sekä muokkaat sivujasi helposti.
+            Käyttämäni hallintojärjestelmät ovat Vilkas, suosittu suomalainen
+            järjestelmä, sekä Shopify.
           </p>
         </article>
       </div>
@@ -341,17 +394,17 @@
       <div class="horizontal__line-left"></div>
       <article class="article article__left">
         <p>
-          Hei! Olen Niko, 35 vuotias itseoppinut freelance web-kehittäjä.
-          Haaveet alanvaihdosta sytyttivät kesällä 2022 kipinän opiskeluun, jota
-          aloin suorittaa erilaisilla verkkokurssein ja omilla projekteilla.
-          Tähän mennessä olen kartuttanut sujuvat HTML, CSS ja JavaScript
-          taidot.
+          Hei! Olen Niko, 35-vuotias itseoppinut freelance web-kehittäjä.
+          Innostukseni ohjelmointiin ja Web-kehitykseen alkoi kesällä 2022 jonka
+          seurauksena sain kipinän opiskeluun, jota aloin suorittaa erilaisin
+          verkkokurssein ja omilla projekteilla. Tähän mennessä olen kartuttanut
+          sujuvat HTML, CSS ja JavaScript taidot.
         </p>
 
         <p>
           Pyrin kehittämään osaamistani jatkuvasti, niin uutta opettelemalla
-          kuin vanhaa osaamista harjaannuttamalla. Juuri nyt työn alla ovat PHP,
-          sekä Reactissa ja Wordpressissa kehittyminen.
+          kuin vanhaa osaamista harjaannuttamalla. Juuri nyt työn alla ovat
+          Shopify verkkokauppa-alusta sekä Reactissa kehittyminen.
         </p>
         <p>
           Tavoitteenani on tehdä moderneja, näyttäviä ja responsiivisia
@@ -371,12 +424,22 @@
       <div class="contact__form">
         <form
           class="form"
-          action="https://formsubmit.co/your@email.com"
+          action="https://formsubmit.co/9f9a11d82a0e60a1cddef9d08f1710f5"
           method="POST"
         >
           <h3>Jätä minulle viesti</h3>
           <p>vastaan mahdollisimman pian!</p>
           <div class="form__group">
+            <!-- Honeypot -->
+            <input type="text" name="_honey" style="display: none" />
+            <!-- Disable Capcha -->
+            <input type="hidden" name="_captcha" value="false" />
+            <!-- success page add URL  -->
+            <input
+              type="hidden"
+              name="_next"
+              value="https://www.webdevniko.fi/thankyou.html"
+            />
             <input
               type="text"
               class="form__input"

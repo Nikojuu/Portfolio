@@ -4,6 +4,9 @@
   background: linear-gradient(to bottom, var(--background-primary));
   position: relative;
   min-height: 100vh;
+  @media only screen and (max-width: $bp-ultrawide) {
+    min-height: 70vh;
+  }
 }
 .heading {
   grid-column: 1 / span 4;
@@ -37,7 +40,7 @@
       border-radius: 5px;
       animation: expandHorizontal 2s ease-in-out;
     }
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-large) {
       font-size: 8.5vw;
       width: 75vw;
       &::before {
@@ -58,16 +61,19 @@
     & img {
       width: 100%;
     }
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-large) {
       padding-top: 0;
       grid-column: 2 / 8;
+    }
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 1 / -1;
     }
   }
   &__cursor {
     color: var(--color-primary);
     animation: blink 1s linear infinite;
   }
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-large) {
     grid-column: 2 / 7;
   }
 }

@@ -9,6 +9,11 @@
     text-align: center;
     margin-top: 4rem;
   }
+  & .article {
+    @media only screen and (max-width: $bp-largest) {
+      grid-column: 2 / 8;
+    }
+  }
 }
 
 .article {
