@@ -54,43 +54,69 @@
 }
 .sertificate {
   grid-column: 2 / 8;
-  display: flex;
-  margin: 5rem auto;
-  justify-content: center;
-  gap: 4.8rem;
-  flex-wrap: wrap;
+  display: grid;
+
+  grid-auto-flow: column;
+  grid-auto-columns: 19vw;
+  gap: 4rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scroll-snap-align: start;
+  scroll-padding-inline: 2rem;
+  margin: 13rem 1rem;
+  padding: 3rem;
+
+  // display: flex;
+  // justify-content: center;
+  // gap: 4.8rem;
+  // overflow-x: scroll;
+  // flex-wrap: nowrap;
+  // width: 100rem;
   @media only screen and (max-width: $bp-large) {
-    grid-column: 3 / 7;
+    grid-auto-columns: 27vw;
   }
   @media only screen and (max-width: $bp-medium) {
-    grid-column: 2 / 8;
+    grid-column: 1 / -1;
+    grid-auto-columns: 35vw;
+  }
+  @media only screen and (max-width: $bp-small) {
+    grid-auto-columns: 52vw;
   }
 
   &__card {
+    &__img {
+      width: 100%;
+      position: absolute;
+      left: 1rem;
+      opacity: 60%;
+      top: -15%;
+      z-index: -1;
+      & img {
+        width: 100%;
+      }
+    }
+
+    padding: 2rem;
+    background: linear-gradient(to bottom, var(--background-primary));
+
     transform: translateY(-200%);
     opacity: 0;
     transition: all 1s ease-in-out;
-    width: 29%;
     height: auto;
-    background-image: url("/src/img/Udemy.png");
-    background-size: 50% auto;
-    background-repeat: no-repeat;
-    background-position: left -10%;
-    background: linear-gradient(to bottom, var(--background-primary));
+    /* Use a gradient background instead of background-image */
     box-shadow: $box-shadow;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
     border: 1px solid var(--color-primary);
-
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    padding: 2rem 2rem;
+    margin-bottom: 2rem;
 
     @media only screen and (max-width: $bp-large) {
-      width: 100%;
+      // width: 100%;
     }
 
     & ul {
@@ -116,7 +142,6 @@
 
       @media only screen and (max-width: $bp-large) {
         margin-top: 2rem;
-        width: 50%;
       }
       @media only screen and (max-width: $bp-small) {
         margin-top: 2rem;
